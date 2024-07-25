@@ -14,13 +14,13 @@ export default function Home() {
 			>
 				<div className="relative flex flex-col justify-center items-center h-full bg-black bg-opacity-50">
 					<h1 className="text-custom-gray font-mono tracking-wider text-4xl font-bold m-4">
-						Hi, I'm <span className="cursor-pointer">Khushi Chaudhary</span>
+						Hi, I am <span className="cursor-pointer">Khushi Chaudhary</span>
 					</h1>
 					<h4 className="text-custom-green text-base mb-4">
 						Web Developer | HTML | CSS | JavaScript | React | Next.js
 					</h4>
 					<p className="text-gray-800 p-8 m-1 text-lg text-justify font-semibold font-sans bg-custom-green rounded-2xl mx-16 my-4">
-						I’m a passionate web developer specializing in building dynamic and
+						I am a passionate web developer specializing in building dynamic and
 						responsive web applications. With a keen eye for detail and a
 						commitment to delivering high-quality work, I strive to create web
 						experiences that are not only visually appealing but also
@@ -34,8 +34,8 @@ export default function Home() {
 				</h1>
 				<div>
 					<p className="m-4 text-justify font-semibold text-gray-700">
-						Hello! I'm a web developer with a focus on crafting dynamic and
-						user-friendly web applications. I'm currently studying for a
+						Hello! I am a web developer with a focus on crafting dynamic and
+						user-friendly web applications. I am currently studying for a
 						Bachelor of Science in Computer Science and Information Technology
 						(BSc CSIT) at Bhaktapur Multiple Campus. Alongside my studies, I am
 						working as a React developer, where I get to apply my skills in
