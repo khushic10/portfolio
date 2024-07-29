@@ -23,11 +23,10 @@ const Navbar = () => {
 	}, []);
 
 	const navbarClasses = scrolled
-		? "bg-custom-gray shadow-lg transition duration-500 ease-in-out"
+		? "bg-custom-darkGreen shadow-lg transition duration-500 ease-in-out"
 		: "bg-transparent transition duration-500 ease-in-out";
-	const navbarLinkClasses = scrolled
-		? "text-custom-blue hover:bg-custom-yellow hover:text-custom-brown "
-		: "text-white hover:bg-custom-gray hover:text-black";
+	const navbarLinkClasses =
+		"text-white hover:bg-custom-gray hover:text-custom-blue";
 	return (
 		<nav className={`fixed w-full top-0 z-50 ${navbarClasses}`}>
 			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -36,7 +35,7 @@ const Navbar = () => {
 						<div className="flex-shrink-0">
 							<img
 								className="h-12 w-auto rounded-xl m-2"
-								src="/images/khushi.png"
+								src="/images/Khushi.png"
 								alt="Your Logo"
 							/>
 						</div>
