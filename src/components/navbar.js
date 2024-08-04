@@ -2,13 +2,13 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ page }) => {
 	const [scrolled, setScrolled] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
 			const offset = window.scrollY;
-			if (offset > 475) {
+			if ((offset > 475 && offset < 950) || offset > 1500) {
 				setScrolled(true);
 			} else {
 				setScrolled(false);

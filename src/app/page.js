@@ -25,7 +25,7 @@ export default function Home() {
 
 	return (
 		<main className="">
-			<Navbar />
+			<Navbar page={"home"} />
 			<div
 				className="h-screen bg-cover bg-center bg-fixed bg-no-repeat"
 				style={{ backgroundImage: "url('/images/table.jpg')" }}
