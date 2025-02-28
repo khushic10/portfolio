@@ -126,7 +126,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="relative h-screen overflow-hidden">
+			<div className="relative h-80 overflow-hidden">
 				{/* Primary Background Image */}
 				<div
 					className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out z-10"
@@ -159,33 +159,20 @@ export default function Home() {
 				/>
 				{/* Overlay Content */}
 				<div className="relative flex h-full items-center justify-center bg-black bg-opacity-30 text-white z-20">
-					<div className="text-center">
+					<div className="sticky top-0 w-full text-center bg-black bg-opacity-40 backdrop-blur-md py-4">
 						<h1 className="text-5xl font-bold font-mono">Projects</h1>
-						<p className="mt-4 text-lg">
+						<p className="mt-2 text-lg px-4">
 							Explore a variety of projects that illustrate my skills,
 							creativity, and commitment to quality in web development.
 						</p>
 					</div>
 				</div>
 			</div>
-			<div className="text-4xl p-4">
-				hello Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-				Veritatis illum sequi omnis odio quod libero magni eaque illo rem,
-				necessitatibus dolorem ex non dolor corporis harum consequatur quis quas
-				repellat. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-				Beatae velit fugiat deleniti. Quos similique suscipit velit placeat.
-				Facilis rerum reiciendis aspernatur aliquid possimus voluptatum dolorem
-				sequi alias iste sit? Nesciunt. Lorem ipsum dolor sit amet consectetur
-				adipisicing elit. Iure quos rerum cum cumque, maiores incidunt
-				inventore, quisquam quaerat reiciendis facilis voluptates, quasi enim
-				nulla quas aliquam architecto iste molestiae dolorum. Lorem ipsum dolor
-				sit amet consectetur, adipisicing elit. Quos distinctio temporibus,
-				maiores ab, delectus, quas odit eaque eligendi tenetur error sed! Qui
-				sapiente expedita perspiciatis corrupti, eos impedit adipisci
-				doloremque? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-				Perferendis quibusdam aut odio voluptatem possimus, nihil iure placeat,
-				quo corrupti aspernatur itaque enim perspiciatis, quisquam impedit
-				aliquam accusantium nesciunt consequuntur quas.
+			<div className="text-xl bg-custom-black px-12 py-8">
+				<div className="grid grid-cols-[2fr_3fr] p-4 cursor-pointer gap-4 items-center hover:shadow-lg transition-all duration-200 bg-white bg-opacity-50 rounded-xl">
+					<img src="/images/baghchal.png" alt="" className=" rounded-2xl" />
+					<div className="bg-red-200">Bagh Chal</div>
+				</div>
 			</div>
 		</main>
 	);

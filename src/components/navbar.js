@@ -8,7 +8,7 @@ const Navbar = ({ page }) => {
 	useEffect(() => {
 		const handleScroll = () => {
 			const offset = window.scrollY;
-			if ((offset > 475 && offset < 950) || offset > 1500) {
+			if ((offset > 475 && offset < 950) || offset > 1250) {
 				setScrolled(true);
 			} else {
 				setScrolled(false);
