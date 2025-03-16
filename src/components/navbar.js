@@ -1,9 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = ({ page }) => {
 	const [scrolled, setScrolled] = useState(false);
+	const pathname = usePathname();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -28,44 +30,27 @@ const Navbar = ({ page }) => {
 	const navbarLinkClasses =
 		"text-white hover:bg-custom-gray hover:text-custom-blue";
 	return (
-		<nav className={`fixed w-full top-0 z-50 ${navbarClasses}`}>
+		<nav className={`fixed w-full top-0 z-50 bg-black/50`}>
 			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 				<div className="relative flex items-center justify-between h-16">
-					<div className="flex items-center justify-start">
-						<div className="flex-shrink-0">
-							<img
-								className="h-12 w-auto rounded-xl m-2"
-								src="/images/Khushi.png"
-								alt="Your Logo"
-							/>
-						</div>
-					</div>
 					<div className="flex items-center space-x-4">
-						<div className="hidden sm:flex sm:space-x-4">
-							<Link
-								href="/"
-								className={`${navbarLinkClasses} px-10 py-2 rounded-md text-base font-medium`}
-							>
-								Home
-							</Link>
-							<Link
-								href="/about"
-								className={`${navbarLinkClasses} px-10 py-2 rounded-md text-base font-medium`}
-							>
-								About
-							</Link>
-							<Link
-								href="/projects"
-								className={`${navbarLinkClasses} px-10 py-2 rounded-md text-base font-medium`}
-							>
-								Projects
-							</Link>
-							<Link
-								href="/contact"
-								className={`${navbarLinkClasses} px-10 py-2 rounded-md text-base font-medium`}
-							>
-								Contact
-							</Link>
+						<div className="hidden sm:flex space-x-8">
+							{["/", "/about", "/projects", "/contact"].map((path) => (
+								<Link
+									key={path}
+									href={path}
+									className={`px-6 py-2 rounded-md text-xl font-medium transition ${
+										pathname === path
+											? "bg-custom-gray text-custom-blue font-bold"
+											: "text-white hover:text-custom-blue"
+									}`}
+								>
+									{path === "/"
+										? "Home"
+										: path.substring(1).charAt(0).toUpperCase() +
+										  path.substring(2)}
+								</Link>
+							))}
 						</div>
 						<div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
 							{/* Mobile menu button*/}
@@ -108,6 +93,15 @@ const Navbar = ({ page }) => {
 									/>
 								</svg>
 							</button>
+						</div>
+					</div>
+					<div className="flex items-center justify-start">
+						<div className="flex-shrink-0">
+							<img
+								className="h-12 w-auto rounded-xl m-2"
+								src="/images/Khushi.png"
+								alt="Your Logo"
+							/>
 						</div>
 					</div>
 				</div>

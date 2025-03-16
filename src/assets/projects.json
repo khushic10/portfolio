@@ -1,0 +1,34 @@
+[
+	{
+		"title": "Baghchal",
+		"description": "A digital adaptation of the traditional Nepali board game Baghchal, featuring an interactive UI and intelligent game logic.",
+		"type": "A Board Game",
+		"github": "https://github.com/yourusername/baghchal",
+		"demo": "/board",
+		"image": "/images/baghchaal.png"
+	},
+	{
+		"title": "Artistry Novel",
+		"description": "An e-commerce platform for purchasing and selling artwork, built with Next.js and Mongodb and integrated with khalti test payment gateway.",
+		"type": "An E-commerce website",
+		"github": "https://github.com/khushic10/eCommerce",
+		"demo": "https://e-commerce-sandy-phi.vercel.app/",
+		"image": "/images/ArtistryNovel.png"
+	},
+	{
+		"title": "Farm Saathi",
+		"description": "A user-friendly UI for Farm Saathi, providing crop and fertilizer recommendations using machine learning.",
+		"type": "An Agriculture Based Frontend",
+		"github": "https://github.com/khushic10/FarmSaathi",
+		"demo": "https://farm-saathi.vercel.app/",
+		"image": "/images/FarmSaathi.png"
+	},
+	{
+		"title": "Hamro Blood Connect",
+		"description": "A web-based system to manage blood donation and requests, facilitating efficient blood bank operations.",
+		"type": "A Blood Bank Management System",
+		"github": "https://github.com/khushic10/bloodBank",
+		"demo": "https://blood-bank-silk-xi.vercel.app/",
+		"image": "/images/HamroBlood.png"
+	}
+]

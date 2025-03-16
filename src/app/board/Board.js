@@ -59,7 +59,7 @@ const Board = ({ initialGoatPositions, initialTigerPositions }) => {
 			<ToastContainer
 				position="top-left"
 				autoClose={1600}
-				hideProgressBar="false"
+				hideProgressBar="true"
 				pauseOnHover="true"
 			/>
 			{showRules && (
