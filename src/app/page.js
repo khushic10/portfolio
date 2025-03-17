@@ -122,7 +122,7 @@ export default function Home() {
 				<div className="grid grid-cols-[1fr_3fr] p-4 cursor-pointer gap-4 items-center hover:shadow-lg transition-all duration-200 bg-white bg-opacity-50 rounded-xl">
 					<div className="flex items-center justify-center">
 						<img
-							src="/images/baghchaal.png"
+							src="/images/BaghChaal.png"
 							alt=""
 							className="h-64 w-64 rounded-2xl"
 						/>
