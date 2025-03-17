@@ -126,7 +126,7 @@ export default function About() {
 							{skills.map((skill, index) => (
 								<div
 									key={index}
-									className="flex flex-col items-center justify-center bg-gray-700 text-white p-6 rounded-xl shadow-lg w-40 h-40"
+									className="flex flex-col items-center justify-center bg-gray-700 hover:bg-custom-blue text-white p-6 rounded-xl shadow-lg w-40 h-40"
 								>
 									<img
 										src={skill.image}
