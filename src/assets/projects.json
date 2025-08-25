@@ -30,5 +30,21 @@
 		"github": "https://github.com/khushic10/bloodBank",
 		"demo": "https://blood-bank-silk-xi.vercel.app/",
 		"image": "/images/HamroBlood.png"
+	},
+	{
+		"title": "NewsHub",
+		"description": "A simple, beginner friendly news aggregator website created with react.js and newsdata.io api",
+		"type": "A News Aggregator App",
+		"github": "https://github.com/khushic10/news-aggregator",
+		"demo": "https://blood-bank-silk-xi.vercel.app/",
+		"image": "/images/NewsHub.png"
+	},
+	{
+		"title": "ForecastFlow",
+		"description": "A web application created with react.js and openweathermap api to view the current weather and 5 days forecast of any city",
+		"type": "A Weather Dashboard",
+		"github": "https://github.com/khushic10/weather-dashboard",
+		"demo": "https://weather-dashboard-five-flax.vercel.app/",
+		"image": "/images/Forecast.png"
 	}
 ]
