@@ -33,6 +33,7 @@ module.exports = {
 				"custom-blue": "#468189",
 				"custom-darkGreen": "#656d4a",
 				"custom-black": "#3B3B28",
+				"custom-gold": "#E6C07B",
 			},
 			animation: {
 				"float-up-down": "floatUpDown 3s ease-in-out infinite",

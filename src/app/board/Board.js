@@ -63,8 +63,8 @@ const Board = ({ initialGoatPositions, initialTigerPositions }) => {
 				pauseOnHover="true"
 			/>
 			{showRules && (
-				<div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-					<div className="bg-white p-6 rounded-lg shadow-lg max-w-lg">
+				<div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 overflow-auto">
+					<div className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mt-8">
 						<h2 className="text-xl font-bold mb-4">Baagh-Chaal Rules</h2>
 						<ul className="space-y-2 text-gray-700">
 							<li>🦁 Players: One plays 4 tigers, the other plays 20 goats.</li>
@@ -82,9 +82,16 @@ const Board = ({ initialGoatPositions, initialTigerPositions }) => {
 							<li>
 								🔄 Movement:
 								<ul className="list-[circle] list-inside ml-4">
-									<li>Tigers move one step in any direction.</li>
+									<li>
+										Tigers move one step in any direction. To move a tiger,
+										click on the tiger you want to move and then click on the
+										point where you want to send the tiger to.
+									</li>
 									<li>
 										After all 20 goats are placed, they can also move one step.
+										To place a goat, click on the point where you want to place
+										the goat at its turn. Similarly, to move a goat, click
+										as for the tiger.
 									</li>
 								</ul>
 							</li>

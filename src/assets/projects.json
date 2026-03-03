@@ -3,48 +3,70 @@
 		"title": "Baghchal",
 		"description": "A digital adaptation of the traditional Nepali board game Baghchal, featuring an interactive UI and intelligent game logic.",
 		"type": "A Board Game",
+		"category": "NEXT",
 		"github": "https://github.com/yourusername/baghchal",
 		"demo": "/board",
-		"image": "/images/BaghChaal.png"
+		"image": "/images/BaghChaal.png",
+		"featured": true
 	},
 	{
 		"title": "Artistry Novel",
 		"description": "An e-commerce platform for purchasing and selling artwork, built with Next.js and Mongodb and integrated with khalti test payment gateway.",
 		"type": "An E-commerce website",
+		"category": "NEXT",
 		"github": "https://github.com/khushic10/eCommerce",
 		"demo": "https://e-commerce-sandy-phi.vercel.app/",
-		"image": "/images/ArtistryNovel.png"
+		"image": "/images/ArtistryNovel.png",
+		"featured": true
 	},
 	{
 		"title": "Farm Saathi",
 		"description": "A user-friendly UI for Farm Saathi, providing crop and fertilizer recommendations using machine learning.",
 		"type": "An Agriculture Based Frontend",
+		"category": "REACT",
 		"github": "https://github.com/khushic10/FarmSaathi",
 		"demo": "https://farm-saathi.vercel.app/",
-		"image": "/images/FarmSaathi.png"
+		"image": "/images/FarmSaathi.png",
+		"featured": true
 	},
 	{
 		"title": "Hamro Blood Connect",
 		"description": "A web-based system to manage blood donation and requests, facilitating efficient blood bank operations.",
 		"type": "A Blood Bank Management System",
+		"category": "NEXT",
 		"github": "https://github.com/khushic10/bloodBank",
 		"demo": "https://blood-bank-silk-xi.vercel.app/",
-		"image": "/images/HamroBlood.png"
+		"image": "/images/HamroBlood.png",
+		"featured": true
 	},
 	{
 		"title": "NewsHub",
 		"description": "A simple, beginner friendly news aggregator website created with react.js and newsdata.io api",
 		"type": "A News Aggregator App",
+		"category": "REACT",
 		"github": "https://github.com/khushic10/news-aggregator",
 		"demo": "https://blood-bank-silk-xi.vercel.app/",
-		"image": "/images/NewsHub.png"
+		"image": "/images/NewsHub.png",
+		"featured": false
 	},
 	{
 		"title": "ForecastFlow",
 		"description": "A web application created with react.js and openweathermap api to view the current weather and 5 days forecast of any city",
 		"type": "A Weather Dashboard",
+		"category": "REACT",
 		"github": "https://github.com/khushic10/weather-dashboard",
 		"demo": "https://weather-dashboard-five-flax.vercel.app/",
-		"image": "/images/Forecast.png"
+		"image": "/images/Forecast.png",
+		"featured": false
+	},
+	{
+		"title": "User Management",
+		"description": "A web application created with next.js, semantic UI and jsonplaceholder api to view the user list, user details and search user",
+		"type": "A User Management App",
+		"category": "NEXT",
+		"github": "https://github.com/khushic10/user-management-task",
+		"demo": "https://user-management-task-nine.vercel.app/",
+		"image": "/images/Forecast.png",
+		"featured": false
 	}
 ]

@@ -1,53 +1,85 @@
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 const Footer = () => {
 	return (
-		<footer className="bg-black opacity-90 text-white py-6">
-			<div className="mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-				{/* Left Section - Logo or Name */}
+		<footer className="bg-black opacity-90 text-white ">
+			<div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-10">
 				<div>
-					<div className="text-sm font-semibold mb-2">Khushi Chaudhary</div>
-					<div className="hover:text-gray-400 transition fab fa-linkedin text-xl">
-						khushichaudhary989@gmail.com
+					<h3 className="text-2xl font-semibold text-custom-yellow">
+						Khushi Chaudhary
+					</h3>
+					<p className="text-sm mt-3 text-custom-gray leading-relaxed">
+						Frontend Developer specializing in building clean, scalable, and
+						user-friendly web applications using modern technologies.
+					</p>
+
+					<div className="flex items-center gap-3 mt-5 text-sm">
+						<FaEnvelope className="text-custom-orange" />
+						<span className="text-custom-creme">
+							khushichaudhary989@gmail.com
+						</span>
 					</div>
 				</div>
 
-				{/* Center Section - Navigation Links */}
-				<div className="flex space-x-6 mt-4 md:mt-0">
-					<a href="/" className="hover:text-gray-400 transition">
-						Home
-					</a>
-					<a href="/about" className="hover:text-gray-400 transition">
-						About
-					</a>
-					<a href="/projects" className="hover:text-gray-400 transition">
-						Projects
-					</a>
-					<a href="/contact" className="hover:text-gray-400 transition">
-						Contact
-					</a>
+				<div className="md:mx-auto">
+					<h4 className="text-lg font-semibold text-custom-yellow mb-4">
+						Quick Links
+					</h4>
+					<ul className="space-y-3 text-sm">
+						<li>
+							<a href="/" className="hover:text-custom-orange transition">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="/about" className="hover:text-custom-orange transition">
+								About
+							</a>
+						</li>
+						<li>
+							<a
+								href="/projects"
+								className="hover:text-custom-orange transition"
+							>
+								Projects
+							</a>
+						</li>
+						<li>
+							<a
+								href="/contact"
+								className="hover:text-custom-orange transition"
+							>
+								Contact
+							</a>
+						</li>
+					</ul>
 				</div>
 
-				{/* Right Section - Social Media Links */}
-				<div className="mt-4 md:mt-0">
-					<a
-						href="https://www.linkedin.com/in/khushi-chaudhary-b17b41217/"
-						className="hover:text-gray-400 transition"
-					>
-						<i className="fab fa-github text-lg">LinkedIn</i>
-					</a>
-					<div>
+				<div className="md:text-center">
+					<h4 className="text-lg font-semibold text-custom-yellow mb-4">
+						Connect
+					</h4>
+
+					<div className="flex md:justify-center gap-4 text-xl">
+						<a
+							href="https://www.linkedin.com/in/khushi-chaudhary-b17b41217/"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-custom-creme hover:text-custom-orange transition"
+						>
+							<FaLinkedin />
+						</a>
+
 						<a
 							href="https://github.com/khushic10"
-							className="hover:text-gray-400 transition"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-custom-creme hover:text-custom-orange transition"
 						>
-							<i className="fab fa-linkedin text-lg">Github</i>
+							<FaGithub />
 						</a>
 					</div>
 				</div>
-			</div>
-
-			{/* Bottom Section - Copyright */}
-			<div className="text-center text-sm text-gray-400 mt-4">
-				© {new Date().getFullYear()} khushi chaudhary. All rights reserved.
 			</div>
 		</footer>
 	);
