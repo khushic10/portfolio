@@ -60,13 +60,33 @@
 		"featured": false
 	},
 	{
-		"title": "User Management",
+		"title": "Userly",
 		"description": "A web application created with next.js, semantic UI and jsonplaceholder api to view the user list, user details and search user",
 		"type": "A User Management App",
 		"category": "NEXT",
 		"github": "https://github.com/khushic10/user-management-task",
 		"demo": "https://user-management-task-nine.vercel.app/",
-		"image": "/images/Forecast.png",
+		"image": "/images/users.png",
 		"featured": false
+	},
+	{
+		"title": "DrawSpace",
+		"description": "A web application created with react.js that allows to freely draw and erase on the board",
+		"type": "A Whiteboard App",
+		"category": "REACT",
+		"github": "https://github.com/khushic10/whiteboard",
+		"demo": "https://whiteboard-chi-nine.vercel.app/",
+		"image": "/images/whiteboard.png",
+		"featured": false
+	},
+	{
+		"title": "Day Pilot",
+		"description": "A mobile application created with react native to add, view and delete tasks according to the date in calendar",
+		"type": "A ToDo App",
+		"category": "REACT NATIVE",
+		"github": "https://github.com/khushic10/day-pilot",
+		"demo": "https://day-pilot-mauve.vercel.app/",
+		"image": "/images/DayPilot.png",
+		"featured": true
 	}
 ]

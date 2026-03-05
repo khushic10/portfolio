@@ -11,7 +11,6 @@ export default function Home() {
 
 	return (
 		<main className="m-0">
-			<Navbar page={"home"} />
 			<div
 				className="h-screen bg-cover bg-center bg-fixed bg-no-repeat"
 				style={{
@@ -22,34 +21,47 @@ export default function Home() {
 					<div className="relative m-10">
 						{hovered && (
 							<div className="absolute left-1/2 transform -translate-x-1/2 top-full mt-4 flex space-x-4">
-								<img
+								<Image
 									src="/images/laptop.png"
 									alt="laptop"
-									className="h-14 w-14 transition-transform duration-1000 ease-in-out transform animate-fall"
+									width={56}
+									height={56}
+									className="h-14 w-14 transition-transform duration-1000 ease-in-out animate-fall"
 									style={{ animationDelay: "0.1s" }}
 								/>
-								<img
+
+								<Image
 									src="/images/laptop.png"
 									alt="laptop"
-									className="h-10 w-10 transition-transform duration-1000 ease-in-out transform animate-fall"
+									width={40}
+									height={40}
+									className="h-10 w-10 transition-transform duration-1000 ease-in-out animate-fall"
 									style={{ animationDelay: "0.3s" }}
 								/>
 
-								<img
+								<Image
 									src="/images/laptop.png"
 									alt="laptop"
-									className="h-14 w-14 transition-transform duration-1000 ease-in-out transform animate-fall"
+									width={56}
+									height={56}
+									className="h-14 w-14 transition-transform duration-1000 ease-in-out animate-fall"
 								/>
-								<img
+
+								<Image
 									src="/images/laptop.png"
 									alt="laptop"
-									className="h-12 w-12 transition-transform duration-1000 ease-in-out transform animate-fall"
+									width={48}
+									height={48}
+									className="h-12 w-12 transition-transform duration-1000 ease-in-out animate-fall"
 									style={{ animationDelay: "0.5s" }}
 								/>
-								<img
+
+								<Image
 									src="/images/laptop.png"
 									alt="laptop"
-									className="h-12 w-12 transition-transform duration-1000 ease-in-out transform animate-fall"
+									width={48}
+									height={48}
+									className="h-12 w-12 transition-transform duration-1000 ease-in-out animate-fall"
 									style={{ animationDelay: "0.2s" }}
 								/>
 							</div>
@@ -121,9 +133,11 @@ export default function Home() {
 			<div className="text-xl bg-custom-black px-28 py-8">
 				<div className="grid grid-cols-[1fr_3fr] p-4 cursor-pointer gap-4 items-center hover:shadow-lg transition-all duration-200 bg-white bg-opacity-50 rounded-xl">
 					<div className="flex items-center justify-center">
-						<img
+						<Image
 							src="/images/BaghChaal.png"
-							alt=""
+							alt="BaghChaal Project"
+							width={256}
+							height={256}
 							className="h-64 w-64 rounded-2xl"
 						/>
 					</div>
@@ -146,7 +160,6 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<Footer />
 		</main>
 	);
 }

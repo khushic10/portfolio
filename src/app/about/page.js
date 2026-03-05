@@ -31,9 +31,30 @@ export default function About() {
 		{ name: "Github", image: "/images/github.png" },
 		{ name: "SASS", image: "/images/sass.png" },
 	];
+	const AzrachTechStack = [
+		"Next.js",
+		"React",
+		"Tailwind CSS",
+		"Tanstack Query",
+		"Semantic UI",
+		"Postman",
+		"Github",
+		"Typescript",
+		"Jira",
+	];
+	const EnvisionTechStack = [
+		"React.js",
+		"Scss",
+		"Node",
+		"Tailwind CSS",
+		"Material UI",
+		"Express",
+		"Postman",
+		"AWS",
+		"JavaScript",
+	];
 	return (
 		<main className="m-0 p-0 ">
-			<Navbar />
 			<div className="mt-20 mx-16 border-custom-brown bg-custom-gray p-8 border-4 rounded-2xl">
 				<h1 className="text-3xl text-center font-semibold text-custom-black font-serif">
 					About Me
@@ -127,76 +148,60 @@ export default function About() {
 						</div>
 					</div>
 					<h4 className="text-center text-custom-brown font-semibold text-2xl font-sans m-4">
-						Work Experience
+						Professional Experience
 					</h4>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-10 m-4">
 						<div className="bg-custom-gray border-l-8 border-custom-blue rounded-xl p-6 shadow-md">
-							<h3 className="text-2xl font-semibold text-custom-black">
-								Frontend Developer
-							</h3>
-
-							<p className="text-sm text-custom-blue font-medium mt-1">
-								Azrach IT · Nepal (Australian-based)
-							</p>
-
-							<p className="text-xs text-custom-green mt-1">
+							<p className="text-sm text-custom-blue font-medium tracking-wide">
 								Sep 2025 – Present
 							</p>
 
-							<ul className="mt-5 space-y-2 text-sm text-custom-black leading-relaxed list-disc list-inside">
-								<li>
-									Developing scalable and high-performance web applications
-									using Next.js, React.js, and Tailwind CSS.
-								</li>
-								<li>
-									Collaborating with UI/UX designers and backend developers to
-									deliver end-to-end solutions.
-								</li>
-								<li>
-									Improving SEO, responsiveness, and performance optimization.
-								</li>
-								<li>
-									Implementing REST APIs, authentication flows, and dashboard
-									features.
-								</li>
-							</ul>
+							<h3 className="text-2xl font-semibold text-custom-black mt-2">
+								Frontend Developer
+							</h3>
+
+							<p className="text-custom-gray mt-1">
+								Azrach IT · Nepal (Australian-based)
+							</p>
+
+							<div className="mt-4 flex flex-wrap gap-2">
+								{AzrachTechStack.map((tech, index) => (
+									<span
+										key={index}
+										className="px-3 py-1 text-xs bg-gray-100 rounded-full"
+									>
+										{tech}
+									</span>
+								))}
+							</div>
 						</div>
 
 						<div className="bg-custom-gray border-l-8 border-custom-green rounded-xl p-6 shadow-md">
-							<h3 className="text-2xl font-semibold text-custom-black">
-								React Intern → Frontend Developer
-							</h3>
-
-							<p className="text-sm text-custom-blue font-medium mt-1">
-								Envision Tech
-							</p>
-
-							<p className="text-xs text-custom-green mt-1">
+							<p className="text-sm text-custom-green font-medium tracking-wide">
 								July 2023 – Sep 2025
 							</p>
 
-							<ul className="mt-5 space-y-2 text-sm text-custom-black leading-relaxed list-disc list-inside">
-								<li>
-									Built interactive UI components using React.js and Ant Design.
-								</li>
-								<li>
-									Worked closely with senior developers on production features.
-								</li>
-								<li>
-									Integrated APIs using Axios and managed application state
-									using Redux.
-								</li>
-								<li>
-									Gained real-world experience in Git workflows and agile
-									development.
-								</li>
-							</ul>
+							<h3 className="text-2xl font-semibold text-custom-black mt-2">
+								React Intern → Frontend Developer
+							</h3>
+
+							<p className="text-custom-gray mt-1">Envision Tech</p>
+
+							<div className="mt-4 flex flex-wrap gap-2">
+								{EnvisionTechStack.map((tech, index) => (
+									<span
+										key={index}
+										className="px-3 py-1 text-xs bg-gray-100 rounded-full"
+									>
+										{tech}
+									</span>
+								))}
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<Footer />
 		</main>
 	);
 }
