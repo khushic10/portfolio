@@ -35,13 +35,6 @@ export default function BeyondCode() {
 				animate="show"
 				className="max-w-6xl mx-auto"
 			>
-				<motion.h1
-					variants={item}
-					className="text-4xl md:text-6xl font-bold mb-6 text-center"
-				>
-					Beyond Code
-				</motion.h1>
-
 				<motion.p
 					variants={item}
 					className="text-gray-400 text-center max-w-2xl mx-auto mb-12"
