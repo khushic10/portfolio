@@ -20,15 +20,19 @@ export default function About() {
 	const skills = [
 		{ name: "HTML", image: "/images/html.png" },
 		{ name: "CSS", image: "/images/css.png" },
-		{ name: "Tailwind", image: "/images/tailwind.png" },
 		{ name: "Javascript", image: "/images/javascript.png" },
+		{ name: "Tailwind", image: "/images/tailwind.png" },
 		{ name: "React", image: "/images/react.png" },
 		{ name: "Next", image: "/images/next.png" },
+		{ name: "React Native", image: "/images/reactnative.png" },
 		{ name: "Node", image: "/images/node.png" },
 		{ name: "Express", image: "/images/express.png" },
+		{ name: "Typescript", image: "/images/typescript.png" },
 		{ name: "Mongo", image: "/images/mongodb.png" },
 		{ name: "Postman", image: "/images/postman.svg" },
+		{ name: "Figma", image: "/images/figma.png" },
 		{ name: "Github", image: "/images/github.png" },
+		{ name: "Jira", image: "/images/jira.png" },
 		{ name: "SASS", image: "/images/sass.png" },
 	];
 	const AzrachTechStack = [
@@ -62,11 +66,12 @@ export default function About() {
 				<p className="m-4 text-justify font-semibold text-gray-800 text-lg">
 					Hello! I am a Frontend Developer focused on building dynamic,
 					responsive, and user-friendly web applications. I hold a Bachelor of
-					Science in Computer Science and Information Technology (BSc CSIT) from
-					Bhaktapur Multiple Campus, Tribhuvan University. Currently, I work as
-					a Frontend Developer at Azrach IT, an Australian-based company in
-					Nepal, where I specialize in Next.js and modern frontend technologies
-					to create innovative solutions and impactful digital experiences.
+					Science in Computer Science and Information Technology (BSc CSIT)
+					degree from Bhaktapur Multiple Campus, Tribhuvan University.
+					Currently, I work as a Frontend Developer at Azrach IT, an
+					Australian-based company in Nepal, where I specialize in Next.js and
+					modern frontend technologies to create innovative solutions and
+					impactful digital experiences.
 				</p>
 				<div>
 					<div className="grid grid-cols-2 m-4 gap-4">
